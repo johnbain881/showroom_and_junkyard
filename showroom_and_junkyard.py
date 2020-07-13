@@ -1,0 +1,21 @@
+showroom = set();
+print(showroom)
+showroom.add("Tesla")
+showroom.add("Ford")
+showroom.add("Jeep")
+showroom.add("Nissan")
+print(len(showroom))
+showroom.add("Tesla")
+print(showroom)
+showroom.update(set({"Hyundai", "Ferrari"}))
+showroom.discard("Jeep")
+print(showroom)
+
+junkyard = {"Honda", "Kia", "Chevy", "Nissan", "Hyundai"}
+print(showroom.intersection(junkyard))
+showroom = showroom.union(junkyard)
+print(showroom)
+showroom.discard("Hyundai")
+showroom.discard("Chevy")
+showroom.discard("Kia")
+print(showroom)
